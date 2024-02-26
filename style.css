@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,360;1,360&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(25, 23, 46);
+    color: white;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.05);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px; 
+    overflow: hidden;
+    width: 20%;
+    height: 600px;
+}
+  
+  .album {
+    text-transform: uppercase;
+  }
+  .album #title{
+    margin: 30px 2px 2px 2px;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+    word-wrap: break-word;
+  }
+  
+  .img-container {
+    padding: 10px;
+    border-radius: 50%;
+    margin: 1rem 0;
+  }
+  
+  .img-container img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding:10px 20px 20px 20px;
+    
+  }
+  .controls i{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 15px;
+    border-radius: 50%;
+  }
+  .controls i:hover{
+    background-color: white;
+    color: black;
+  }
+  .controls i:nth-child(2){
+     font-size: 15px;
+  }
+  
+  .audio-range {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+
+  .audio-range input {
+    margin: 0 10px;
+  }
+
+  @keyframes spin{
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+  }
+  .img-container #album-img{
+    animation: spin 6s linear infinite;
+    animation-play-state: paused
+  }
+
+  .img-container #album-img-pause{
+    animation-play-state: paused;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 70%;
+    }
+}

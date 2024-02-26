@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <script defer src="/Music player/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="album">
+            <h2 id="title">Sunflower</h2>
+            <h3 id="singer">Post Melone</h3>
+            <div class="img-container">
+                <img id="album-img" src="https://i1.sndcdn.com/artworks-C9Iaa8IBy9cQ064Y-VsPIHg-t500x500.jpg" alt="" class="song-image">
+            </div>
+            <audio id="audio" src="/Music player/Songs/Post Malone - Sunflower.mp3"></audio>
+        </div>
+            
+        <div class="controls">
+            <i id="prev-btn" class="fa-solid fa-backward"></i>
+            <i id="play-btn" class="fa-solid fa-play"></i>
+            <i id="next-btn" class="fa-solid fa-forward"></i>
+        </div>
+
+        <div class="audio-range">
+            <i class="fa-solid fa-volume-low"></i>
+            <input id="audio-range" type="range" min="0" max="100"/>
+            <i class="fa-solid fa-volume-high"></i>
+        </div>
+    </div>
+    
+</body>
+</html>
