@@ -58,7 +58,7 @@ playPause.addEventListener("click",()=>{
 const loadSongs=(songs)=>{
     title.textContent = songs.title;
     singer.textContent = songs.artist;
-    audio.src = "/Music player/Songs/" + songs.name + ".mp3";
+    audio.src = "./Songs/" + songs.name + ".mp3";
     poster.src = songs.ImgSrc;
 }
 
